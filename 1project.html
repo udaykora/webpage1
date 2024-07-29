@@ -5,51 +5,520 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .msg {
+        height: 24px;
+        width: 34px;
+      }
+      .image {
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(100, 97, 97);
+      }
+      .contact {
+        height: 9px;
+        width: 80px;
+        color: white;
+        background-color: rgb(43, 43, 228);
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 3px;
+        padding-bottom: 18px;
+        border: none;
+        margin-left: auto;
+        font-size: 11px;
+      }
 
-      @media only screen and (min-width:759px) and (max-width:1024px){
-        width:100%
-      }
-      @media only screen and (min-width:425px) and  (max-width:767px){
-        width:100%
-      }
-      body {
-        display:flex;
-        flex-direction:column;
-        flex-shrink:0;
-        height:100%;
-        background-image: url(mp/HD-wallpaper-gradient-background-color-yellow-orange-thumbnail.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
       .one {
         display: flex;
-        align-items: center; /* Center items vertically */
+        align-items: center;
+        justify-content: center;
       }
-      .msg {
+
+      .f1 {
+        height: 160px;
+        width: 100%;
+      }
+
+      .qwe {
+        display: flex;
+        align-items: center;
+      }
+      .text {
+        width: 1000px;
+        font-size: x-small;
+      }
+      .poi {
+        border-style: solid;
+        align-self: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(14, 145, 90);
+        color: white;
+        font-weight: bolder;
+        margin-left: auto;
+        font-size: x-small;
+      }
+
+      .gg {
+        border-style: solid;
+        color: aqua;
+        margin-top: 0px;
+      }
+
+      .q1 {
+        color: aqua;
+        font-weight: bolder;
+        font-size: smaller;
+      }
+      .asdf{
+        font-size: x-small;
+      }
+      .hello{
+        font-size: x-small;
+      }
+      .hi{
+        font-size: x-small;
+        margin-right: 30px;
+
+      }
+      .hii{
+        font-size: x-small;
+
+      }
+      .hiii{
+        font-size: x-small;
+        margin-right: 40px;
+      }
+      .aus{
+        display: flex;
+        justify-content: space-between;
+      }
+      .four{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
+        
+      }
+      .eleven{
+        width: 140px;
+      }
+      .cont{
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      .cont1{
+        display: flex;
+        justify-content: space-between;
+
+      }
+      .cont2{
+        margin-top: 2px;
+        
+      }
+      .eleven1{
+        display: flex;
+        width: 140px;
+        margin-left: px;
+      }
+      .cb{
+        display: flex;
+      }
+      .cakebeer{
+        width:130px;
+        height: 160px;
+      }
+      .box1{
+        display: inline-block;
+      }
+      .cb2{
+        display: inline-block;
+        vertical-align: top;
+      }
+      .apple{
+        width: 125px;
+        height: 160px;
+    
+      }
+      .cb2{
+        margin-left: 45px
+      }
+      .coffee{
+        width: 130px;
+        height: 160px;
+      }
+.box3{
+    display: inline-block;
+}
+    .cb4{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .ice{
+        width: 135px;
+        display: block;
+        margin-left:35px;
+        height: 160px;
+    }
+    .box4{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .cb4{
+      margin-left: 30px;
+    
+    }
+    .juice{
+        width: 135px;
+        height: 165px;
+        display: block;
+        vertical-align: top;
+    }
+    .box5{
+        display: inline-block;
+    }
+    body{
+        background-image: url(HD-wallpaper-gradient-background-color-yellow-orange-thumbnail.jpg);
+
+        background-repeat: no-repeat;
+    
+        height: 100%;
+        background-size: cover;
+    }
+    .non{
+        font-size: x-small;
+    }
+    .lemons{
+        width: 100px;
+    }
+    .boxi1{
+        display: inline-block;
+    }
+    .boxi2{
+        display: inline-block;
+        margin-left: 27%
+    }
+    .mango{
+        width: 110px;
+        height: 150px;
+       
+    }
+    .papa{
+        margin-top: 2px;
+        height: 150px;
+    }
+    .boxi3{
+        display: inline-block;
+        margin-top: 3px;
+    }
+    .boxi4{
+        display: inline-block;
+        margin-left: 80px;
+    }
+    .ring{
+        height: 150px;
+        margin-left: 100;
+        width: 110px;
+    }
+    .banana{
+        display: block;
+        height: 150px;
+    }
+    .boxi5{
+        margin-top: 5px;
+    }
+    .uk{
+        display: inline-block;
+    }
+    .aak{
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .rma{
+        margin-top: 10px;
+    
+    }
+    .us{
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    .sai{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sub{
+        margin-top: 10px;
+        margin-left: 40%;
+    }
+    .gg{
+        margin-top: 30px;
+    }
+    .temp{
+        color: aqua;
+      }
+      .cr{
+        display: flex;
+        font-size: x-small;
+        justify-content: center;
+        
+      }
+      .subm{
+        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(33, 126, 231);
+        color: white;
+        font-weight: bold;
+        margin-left:0% ;
+        right: 20px;
+        border: none;
+      }
+
+      @media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+        .one {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .contact {
+          height: 55px;
+          width: 150px;
+          color: white;
+          background-color: rgb(43, 43, 228);
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border: none;
+          margin-left: auto;
+          font-size: medium;
+        }
+        .msg {
         height: 40px;
         width: 45px;
-        margin-right: 15px;
       }
       .image {
         font-size: 29px;
         font-weight: bold;
         color: rgb(100, 97, 97);
-      }
-      .contact {
-        height: 40px;
-        width: 150px;
-        color: white;
-        background-color: rgb(43, 43, 228);
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border: none;
-        margin-left: auto;
-        
+
       }
       .f1 {
-        height: 500px;
+        height: 450px;
+        width: 100%;
+      }
+      .qwe {
+        display: flex;
+        align-items: center;
+      }
+      .text {
+        width: 1000px;
+        font-size:medium;
+      }
+      .poi {
+        border-style: solid;
+        align-self: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(14, 145, 90);
+        color: white;
+        font-weight: bolder;
+        margin-left: auto;
+        font-size: medium;
+        text-align: center;
+        
+      }
+
+      .q1 {
+        color: aqua;
+        font-weight: bolder;
+        font-size: large;
+      }
+      .asdf{
+        font-size: large;
+      }
+      .cont{
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      .cont{
+        display: flex;
+        justify-content: space-between;
+
+      }
+      .hello{
+        font-size: large;
+      }
+      .hi{
+        font-size: large;
+        margin-right: 165px;
+      }
+
+      .hii{
+        font-size: large;
+        margin-right: 320px;
+      }
+      .hiii{
+        font-size: large;
+        margin-right: 199px;
+      }
+      .eleven{
+        width: 340px;
+        margin-left: 25px;
+      }
+      .eleven1{
+        width: 340px;
+        margin-left:20px;
+      }
+      .entire{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .cakebeer,.ice,.coffee,.juice,.apple{
+       height: 220px;
+       width: 150px;
+
+      }
+      .cb2{
+      margin: 0%;
+      }
+      .ice{
+        margin: 0%;
+      }
+      .cb4{
+        margin-left: 0%;
+      }
+      .entire1{
+        display: flex;
+        justify-content: space-between;
+      }
+      .boxi2{
+        margin: 0%;
+      }
+      .boxi4{
+        margin: 0%;
+      }
+      .non{
+        font-size: large;
+      }
+      .lemons{
+        width: 150px;
+      }
+      .mango{
+        height: 220px;
+        width: 160px;
+      }
+      .papa{
+        height: 220px;
+        width: 160px;
+
+      }
+      .ring{
+        height: 220px;
+        width: 160px;
+      }
+      .banana{
+        height: 220px;
+        width: 160px;
+      }
+      .subm{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(33, 126, 231);
+        color: white;
+        font-weight: bold;
+        margin-left:24% ;
+      }
+      .sub{
+        display: flex;
+        margin-left: 300px;
+        margin-top: 50px;
+      }
+      .kiran{
+        display: flex;
+        justify-content: center;
+      }
+      .sai{
+        height: 100px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 0cqmax;
+      }
+      .us{
+        margin-left: 35%;
+      }
+      .cr{
+        display: flex;
+        justify-content: center;
+        font-size: x-large;
+      }
+      .cbb1,.cbb2,.cbb3,.cbb4,.cbb5,.enn,.enn1,.enn2,.enn3,.enn4,.enn5{
+        height: 30px;
+        width: 25px;
+      }
+      .kop1,.cop2,.cop3,.cop4,.cop5{
+        font-size:23px;
+        vertical-align: top;
+      }
+      .pok,.pok1,.pok2,.pok3,.pok4{
+        font-size:23px;
+        vertical-align: center;
+
+      }
+      
+      }
+    
+    
+
+
+     
+
+      
+      @media screen and (min-width: 1440px) and (max-width: 2560px) {
+        .one {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .contact {
+          height: 55px;
+          width: 150px;
+          color: white;
+          background-color: rgb(43, 43, 228);
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border: none;
+          margin-left: auto;
+          font-size: medium;
+        }
+        .msg {
+        height: 40px;
+        width: 45px;
+      }
+      .image {
+        font-size: 29px;
+        font-weight: bold;
+        color: rgb(100, 97, 97);
+
+      }
+      .f1 {
+        height: 600px;
         width: 100%;
       }
       .qwe {
@@ -58,6 +527,7 @@
       }
       .text {
         width: 1200px;
+        font-size: larger;
       }
       .poi {
         border-style: solid;
@@ -70,6 +540,8 @@
         color: white;
         font-weight: bolder;
         margin-left: auto;
+        font-size: larger;
+        text-align: center;
       }
       .br {
         color: aqua;
@@ -78,105 +550,86 @@
         border-style: solid;
         color: aqua;
         margin-top: 30px;
-      }
-      .q1 {
+    }
+    .q1 {
         color: aqua;
         font-weight: bolder;
-        font-size: larger;
+        font-size: x-large;
+      }
+      .asdf{
+        font-size: x-large;
       }
       .cont{
         display: flex;
         justify-content: space-between;
-        align-items: center;
-      }
-      .four{
-        display: flex;
-        justify-content: space-between;
-      }
-      .hi{
-        margin-right: 30px;
-        margin-bottom: 10px;
-      }
-      .hii{
-        margin-right: 150px;
-        margin-bottom: 10px;
+
       }
       .hello{
-        margin-bottom: 10px;
+        font-size: x-large;
       }
-      .sriram{
-        margin-top: 20px;
-        display: flex;
-        gap: 440px;
+      .hi{
+        font-size: x-large;
+        margin-right: 120px;
       }
-      .dish1{
-        margin-left: 290px;
-        margin-top: 10px;
+
+      .hii{
+        font-size: x-large;
+        margin-right: 320px;
       }
-      .dish{
-        margin-top: 10px;
+      .hiii{
+        font-size: x-large;
+        margin-right: 149px;
       }
-      .cb{
-        display: flex;
-        justify-content: space-between;
+      .eleven{
+        width: 340px;
+        margin-left: 25px;
       }
-      .drinks{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
+      .eleven1{
+        width: 340px;
+        margin-left:20px;
       }
-      .cb5{
-        margin-right: 100px;
-      }
-      .img1{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-      }
-      .kp{
+      .entire{
         display: flex;
         justify-content: space-between;
       }
-      .en4{
-        margin-right: 130px;
+      .cakebeer,.ice,.coffee,.juice,.apple{
+        height: 220px;
+        width: 200px;
 
       }
-      .name{
-        width: 310px;
-        height: 39px;
-        margin-top: 5px;
+      
+      .entire1{
+        display: flex;
+        justify-content: space-between;
       }
-      .email{
-        width: 310px;
-        height: 39px;
-        margin-top: 5px;
+      .boxi2{
+        margin: 0%;
+      }
+      .boxi4{
+        margin: 0%;
+      }
+      .non{
+        font-size: large;
+      }
+      .lemons{
+        width: 150px;
+      }
+      .mango{
+        height: 220px;
+        width: 160px;
+      }
+      .papa{
+        height: 220px;
+        width: 160px;
 
       }
-      .aak{
-        display: inline-block;
-        margin-left: 60px;
+      .ring{
+        height: 220px;
+        width: 160px;
       }
-      .rma{
-        margin-left: 70px;
-      }
-      .uk{
-        display: inline-block;
-      }
-      .us{
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 200px;
-      }
-      .sai{
-        height: 100px;
-        width: 300px;
-        margin-top: 10px;
-        border-radius: 0cqmax;
-      }
-      .sub{
-        display: flex;
-        margin-left: 400px;
-        margin-top: 50px;
+      .banana{
+        height: 220px;
+        width: 160px;
       }
       .subm{
         padding-left: 30px;
@@ -186,131 +639,375 @@
         background-color: rgb(33, 126, 231);
         color: white;
         font-weight: bold;
+        margin-left:24% ;
+      }
+      .sub{
+        display: flex;
+        margin-left: 400px;
+        margin-top: 50px;
       }
       .kiran{
         display: flex;
         justify-content: center;
       }
-      .temp{
-        color: aqua;
+      .sai{
+        height: 100px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 0cqmax;
+      }
+      .us{
+        margin-left: 39%;
       }
       .cr{
         display: flex;
         justify-content: center;
+        font-size: x-large;
+      }
+      .cbb1,.cbb2,.cbb3,.cbb4,.cbb5,.enn,.enn1,.enn2,.enn3,.enn4,.enn5{
+        height: 30px;
+        width: 25px;
+      }
+      .kop1,.cop2,.cop3,.cop4,.cop5{
+        font-size:23px;
+        vertical-align: top;
+      }
+      .pok,.pok1,.pok2,.pok3,.pok4{
+        font-size:23px;
+        vertical-align: center;
+
+      }
+      
+      
+      
+    }
+   @media screen and (min-width:426px) and (max-width:768px) {
+    .msg {
+        height: 54px;
+        width: 44px;
+      }
+      .image {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(100, 97, 97);
       }
 
+      .contact {
 
+        height: 9px;
+        width: 100px;
+        color: white;
+        background-color: rgb(43, 43, 228);
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 10px;
+        padding-bottom: 27px;
+        border: none;
+        margin-left: auto;
+        font-size: 15px;
+      }
+
+      .f1 {
+        height: 320px;
+        width: 100%;
+      }
+
+      .text{
+        font-size: 15px;
+      }
+      .poi{
+        height: 80px;
+        align-content: center;
+        font-size: 14px;
+      }
+
+      .zxc{
+        font-size: 25px;
+      }
+
+      .asdf{
+        font-size: 15px;
+      }
+      .rampa{
+        font-size: medium;
+      }
+      .rampa1{
+        font-size: medium;
+      }
+      .rampa2{
+        font-size: medium;
+      }
+      .rampa3{
+        font-size: medium;
+      }
+      .rampa4{
+        font-size: medium;
+      }
+      .eleven{
+        width: 250px;
+        margin-left: 14px;
+      }
+      .eleven1{
+        width: 250px;
+        margin-left: 15px;
+      }
+      .hiii{
+        margin-right: 120px;
+      }
+      .hi{
+        margin-right: 98px;
+
+      }
+      .cb2{
+        margin: 0%;
+      }
+      .ice{
+        margin: 0%;
+      }
+     .entire{
+      display: flex;
+      justify-content: space-between;
+     }
+     .cb4{
+
+      margin-left: 0px;
+     }
+     .q1{
+      font-size: large;
+     }
+     .non{
+      font-size: medium;
+     }
+     .entire1{
+      display: flex;
+      justify-content: space-between;
+     }
+     .boxi2{
+      margin: 0%;
+     }
+     .boxi4{
+      margin: 0%;
+     }
+     .kiran{
+      display: flex;
+      justify-content: center;
+     }
+
+     .us{
+      margin-left: 37%;
+      
+     }
+     .sub{
+      margin-left: 43%;
+     }
+     .cr{
+      font-size: large;
+      display: flex;
+      justify-content: center;
+     }
       
       
-    </style>
-  </head>
-  <body>
+
+      }
+      @media screen and (min-width:375px) and (max-width:421px){
+        .box4{
+          margin-left: 5px;
+        }
+        .boxi4{
+          position: relative;
+          left: 17px;
+         
+        }
+        .aak{
+          margin-left: 51px;
+        }
+        .rma{
+          margin-left: 54px;
+        }
+        .sub{
+          position: relative;
+          right: 20px;
+        }
+
+      }
+      @media screen and (min-width:425px) and (max-width:642px){
+        .cb2{
+          display: non;
+          margin-left: 0px;
+        }
+        .ice{
+          margin: 0%;
+        }
+        .cb4{
+          margin-left: 0%;
+        }
+        .juice{
+          height: 160px;
+        }
+        .boxi4{
+          margin-left: 110px;
+        }
+        .aak{
+          margin-left: 90px
+        }
+        .rma{
+          margin-left: 90px;
+        }
+        .us{
+          margin-left: 110px;
+        }
+        .cr{
+      font-size: small;
+      display: flex;
+      justify-content: center;
+     }
+        
+      }
+      
+
+
+    
+   
+    
+</style>
+<body>
     <div class="one">
-      <img class="msg" src="mp/Speech-Balloon-Emoji.png" />
-      <p class="image">Image survey</p>
-      <button class="contact">Contact us</button>
-    </div>
-    <div class="flowers">
+        <img class="msg" src="mp/Speech-Balloon-Emoji.png" />
+        <p class="image">Image survey</p>
+        <button class="contact">Contact us</button>
+      </div>
+
       <img class="f1" src="mp/survey.jpg" />
-    </div>
-    <div class="qwe">
-      <p class="text">
-        An image is a visual representation. An image can be two-dimensional,
-        such as a drawing, painting, or photograph, or three-dimensional, such
-        as a carving or sculpture. Images may be displayed through other media,
-        including a projection on a surface, activation of electronic signals,
-        or digital displays; they can also be reproduced through mechanical
-        means, such as photography, printmaking, or photocopying. Images can
-        also be animated through digital or physical processes. In the context
-        of signal processing, an image is a distributed amplitude of
-        color.In optics, the term "image" (or "optical image") refers
-        specifically to the reproduction of an object formed by light waves
-        coming from the object.
-      </p>
-      <p class="poi">"Your opinion matters"</p>
-    </div>
-    <div class="gg"></div>
-    <div class="zxc">
-      <p class="q1">Question 1</p>
-    </div>
-    <div class="asd">
-      <p class="asdf">
-        Fusce feugiat est dignissum feugiat dapibus,arcu lacus varius dolor,vel
-        auctor odio lectus sed diam. Ut gravida tristique lacus, sed molestie
-        tellus faucibus non
-      </p>
-    </div>  
-    <form class="cont">
-        <div class="hello">
-      <input type="radio" id="first">
-      <label for="first">A.Pellentesque quis matus</label>
-    </div>
-    <div class="hi">
-      <input type="radio" id="second">
-      <label for="second">B.murbi faucibus tellus</label>
-    </div>
-    <div class="hii">
-      <input type="radio" id="third">
-      <label for="second">C.Maecenas pretium</label>
-    </div>
+
+      <div class="qwe">
+        <p class="text">
+          An image is a visual representation. An image can be two-dimensional,
+          such as a drawing, painting, or photograph, or three-dimensional, such
+          as a carving or sculpture. Images may be displayed through other media,
+          including a projection on a surface, activation of electronic signals,
+          or digital displays; they can also be reproduced through mechanical
+          means, such as photography, printmaking, or photocopying. Images can
+          also be animated through digital or physical processes. In the context
+          of signal processing, an image is a distributed amplitude of
+          color.In optics, the term "image" (or "optical image") refers
+          specifically to the reproduction of an object formed by light waves
+          coming from the object.
+        </p>
+        <p class="poi">"Your opinion matters"</p>
+        </div>
+        <div class="gg"></div>
+
+        <div class="zxc">
+            <p class="q1">Question 1</p>
+          </div>
+          <div class="asd">
+            <p class="asdf">
+              Fusce feugiat est dignissum feugiat dapibus,arcu lacus varius dolor,vel
+              auctor odio lectus sed diam. Ut gravida tristique lacus, sed molestie
+              tellus faucibus non
+            </p>
+          </div>  
+
+          <form class="cont">
+            <div class="hello">
+          <input type="radio" class="first">
+          <label for="first" class="rampa">A.Pellentesque quis matus</label>
+        </div>
+        <div class="hi">
+          <input type="radio" id="second">
+          <label for="second" class="rampa1">B.murbi faucibus tellus</label>
+        </div>
     </form>
-</div>
-<div class="four">
-    <img class="eleven" src="mp/img-3x2-5.jpg">
-    <img class="eleven" src="mp/img-3x2-4.jpg">
+    
+    <div class="four">
+        <img class="eleven" src="mp/img-3x2-5.jpg">
+        <img class="eleven" src="mp/img-3x2-4.jpg">
+          
+    </div>
+  <form class="cont1">
+    <div class="hii">
+        <input type="radio" id="third">
+        <label for="second" class="rampa2">C.Maecenas pretium</label>
+    </div>
+
+        <div class="hiii">
+
+            <input type="radio" id="to">
+            <label for="to" class="rampa3">Sed nec faucibus ex</label>
+        </div>
+
+
+  </form>
+  <div class="four">
     <img class="eleven" src="mp/img-3x2-3.jpg">
+    <img class="eleven" src="mp/img-3x2-2.jpg">
+  </div>
 
-</div>
-<form class="sriram">
-    <div>
+  <form class="cont2">
+    <div class="hii">
+        <input type="radio" id="tt">
+        <label for="to" class="rampa4">Maecnas pretium</label>
+    </div>
 
-    <input type="radio" id="to">
-    <label for="to">Sed nec faucibus ex</label>
-</div>
-<div>
-    <input type="radio" id="tt">
-    <label for="to">Maecnas pretium</label>
-</div>
-</form>
-<div class="tf">
-    <img class="dish" src="mp/img-3x2-2.jpg">
-    <img class="dish1" src="mp/img-3x2-1.jpg">
+  </form>
 
-</div>
+  <img class="eleven1" src="mp/img-3x2-1.jpg">
 
-<div class="gg"></div>
+  <div class="gg"></div>
 
-<p class="q1">Question 2</p>
-<div class="cb">
+  <p class="q1">Question 2</p>
+  <div class = "entire">
+    <div class="box1">
     <div class="cb1">
-    <input type="checkbox" id="cbb1">
-    <label for="cbb1">Option 1</label>
+    <input type="checkbox" class="cbb1">
+    <label for="cbb1" class="kop1">Option 1</label>
+    </div>
+    <div class="drinks">
+        <img class="cakebeer"  src="mp/img-1x1-1.jpg">
+
 </div>
+</div>
+
+
 <div class="cb2">
-    <input type="checkbox" id="cbb2">
-    <label for="cbb2">Option 2</label>
+    <input type="checkbox" class="cbb2">
+    <label for="cbb2" class="cop2">Option 2</label>
+    <div class="drinks1">
+    <img class="apple" src="mp/img-1x1-2.jpg">
+    </div>
 </div>
+
+
+<div class="box3">
 <div class="cb3">
-    <input type="checkbox" id="cbb3">
-    <label for="cbb3">Option 3</label>
+    <input type="checkbox" class="cbb3">
+    <label for="cbb3" class="cop3">Option 3</label>
 </div>
+<img class="coffee" src="mp/img-1x1-3.jpg">
+</div>
+
+<div class="box4">
 <div class="cb4">
-    <input type="checkbox" id="cbb4">
-    <label for="cbb4">Option 4</label>
+    <input type="checkbox" class="cbb4">
+    <label for="cbb4" class="cop4">Option 4</label>
+    </div>
+    <img class="ice"src="mp/img-1x1-4.jpg">
+
+
 </div>
 
+
+
+<div class="box5">
 <div class="cb5">
-    <input type="checkbox" id="cbb5">
-    <label for="cbb5">Option 5</label>
+    <input type="checkbox" class="cbb5">
+    <label for="cbb5" class="cop5">Option 5</label>
+    
 </div>
+<img class="juice" src="mp/img-1x1-5.jpg">
+
 </div>
 
-<div class="drinks">
-    <img src="mp/img-1x1-1.jpg">
-    <img src="mp/img-1x1-2.jpg">
-    <img src="mp/img-1x1-3.jpg">
-    <img src="mp/img-1x1-4.jpg">
-    <img src="mp/img-1x1-5.jpg">
 </div>
 <div class="gg"></div>
 
@@ -319,36 +1016,55 @@
 <p class="non">
     In tincidunt non nisl quis praesent justo libero, eleifend at rhoncus a , ultrices non ml pelientesque quis metus a nulla commodo consectetur. in ultrices lorem accuman, euismod tellus egestas
 </p>
-<div class="img1">
-    <img src="mp/img-2x3-1.jpg">
-    <img src="mp/img-2x3-2.jpg">
-    <img src="mp/img-2x3-3.jpg">
-    <img src="mp/img-2x3-4.jpg">
-    <img src="mp/img-2x3-5.jpg">
+<div class="entire1">
+<div class="boxi1">
+    <img class="lemons" src="mp/img-2x3-1.jpg">
+    <div class="en">
+        <input type="radio" class="enn">
+        <label for="enn" class="pok">Image 1</label>
+    
+</div>
+</div>
+<div class="boxi2">
+    <img class="mango" src="mp/img-2x3-2.jpg">
+
+    <div class="en1">
+        <input type="radio" class="enn1">
+        <label for="enn" class="pok1">Image 2</label>
+    </div>
+    
+</div>
+
+<div class="boxi3">
+    <img class ="papa" src="mp/img-2x3-3.jpg">
+
+    <div class="en2">
+        <input type="radio" class="enn2">
+        <label for="enn2" class="pok2">Image 3</label>
+    </div>
 
 </div>
-<form class="kp">
-    <div class="en">
-    <input type="radio" id="enn">
-    <label for="enn">Image 1</label>
+
+<div class="boxi4">
+    <img class="ring" src="mp/img-2x3-4.jpg">
+    <div class="en3">
+        <input type="radio" class="enn3">
+        <label for="enn3" class="pok3">Image 4</label>
+    </div>
+
+    
 </div>
-<div class="en1">
-    <input type="radio" id="enn1">
-    <label for="enn">Image 2</label>
+
+<div class="boxi5">
+    <div class="en4">
+        <img class="banana" src="mp/img-2x3-5.jpg">
+        <input type="radio" class="enn4">
+        <label for="en4" class="pok4">Image 5</label>
+    </div>
+
 </div>
-<div class="en2">
-    <input type="radio" id="enn2">
-    <label for="enn2">Image 3</label>
+
 </div>
-<div class="en3">
-    <input type="radio" id="enn3">
-    <label for="enn3">Image 4</label>
-</div>
-<div class="en4">
-    <input type="radio" id="enn4">
-    <label for="en4">Image 5</label>
-</div>
-</form>
 <div class="gg"></div>
 
 <p class="q1">Please tell a little bit about yourself</p>
@@ -359,6 +1075,7 @@
     <br>
     
     <input type="text" class="name">
+    </div>
 
     <div class="aak">
     <input type="radio" id="male">
@@ -386,6 +1103,7 @@
     </select>
 </div>
 <div class="us">
+
 <label for="sai">additional information</label>
 <br>
 <input type="text" class="sai">
@@ -403,5 +1121,13 @@
 </p>
 
 
-  </body>
+
+
+
+
+</body>
 </html>
+    
+        
+
+
